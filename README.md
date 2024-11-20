@@ -1,0 +1,1 @@
+# buscaHeuristica_2024
