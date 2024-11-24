@@ -2,14 +2,13 @@
 CXX = g++
 
 # Flags de compilação
-CXXFLAGS = -std=c++11 -Wall
+CXXFLAGS = -std=c++11 -Wall -fopenmp
 
 # Nome do executável
 TARGET = main.exe
 
 # Arquivos fonte
 SRC = main.cpp
-HEADERS = instancia.hpp
 
 # Regra para compilar e gerar o executável
 $(TARGET): $(SRC) $(HEADERS)

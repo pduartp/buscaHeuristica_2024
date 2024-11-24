@@ -1,5 +1,4 @@
-#ifndef PAIRS_HPP
-#define PAIRS_HPP
+#pragma once
 
 #include <iostream>
 
@@ -7,7 +6,7 @@ using namespace std;
 
 class Pair
 {
-private:
+public:
     int first_Element;
     int second_Element;
     double distance_Element;
@@ -50,5 +49,3 @@ public:
         return distance_Element;
     }
 };
-
-#endif

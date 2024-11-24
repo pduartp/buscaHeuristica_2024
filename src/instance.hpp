@@ -1,5 +1,4 @@
-#ifndef INSTANCIA_HPP // Prevenção contra múltiplas inclusões
-#define INSTANCIA_HPP
+#pragma once
 
 #include <iostream>
 #include "pair.hpp"
@@ -7,7 +6,7 @@
 using namespace std;
 
 // Classe que armazenará as instancias do problema
-class Instancia
+class Instance
 {
 public:
     int quant_Elem;               // Quantidade de elementos
@@ -20,7 +19,7 @@ public:
 
     bool igual_Tam_Grupos; // Verifica se os grupos têm o mesmo tamanho
 
-    Instancia()
+    Instance()
     {
         this->quant_Elem = 0;
         this->quant_Grup = 0;
@@ -29,7 +28,7 @@ public:
         this->arr_Pair = {};
         this->igual_Tam_Grupos = false;
 
-        cout << "instancia criada" << endl;
+        // cout << "instancia criada" << endl;
     }
 
     void read_File(const string &fileName)
@@ -80,9 +79,9 @@ public:
             string_stream >> distance;
             this->arr_Pair.push_back(Pair(first_Elem, second_Elem, distance));
         }
-
+        
         file.close();
-        cout << "Arquivo lido com sucesso!" << endl;
+        // cout << "Arquivo lido com sucesso!" << endl;
     }
 
     void to_String()
@@ -120,5 +119,3 @@ public:
         }
     }
 };
-
-#endif
